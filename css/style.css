@@ -64,6 +64,8 @@ form {
     margin-top: 110px;
     position: absolute;
     font-size: 40px;
+    color: #fff;
+    background-color:#0f0fec;
 }
 .overlay {
     display: none;
