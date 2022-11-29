@@ -11,17 +11,6 @@ function check() {
   }
 }
 
-function checkOverlay() {
-  const overlay = document.getElementsByClassName('overlay');
-  if (document.getElementById('popup__input').checked = true) {
-    for (var i=0;i<overlay.length;i+=1){
-      overlay[i].style.display = 'block';
-    }
-  } else {
-    overlay.style.display = "none";
-  }
-}
-
 const changePosition = () => {
   let randX = Math.random();
   let randY = Math.random();
