@@ -10,15 +10,24 @@
 <body>
     <header></header>
     <main>
-        <div class="button">
-          <input type="checkbox" name="popup" id="popup" class="popup__check">
-          <label name="popup" id="popup" class="popup">
+    <div class="button">
+        <input onclick="check()" type="checkbox" name="popup__input" id="popup__input" class="popup__check">
+    </div>
+    <div class="popup" name="popup" id="popup">
+        <label class="popup__label">
             <form>
-                <input type="text" id="fname" name="fname"><br><br>
+                <div class="form__input">
+                    <input type="text" id="fname" name="fname"><br><br>
+                </div>
+                <div class="close-button__container">
+                    <button class="close__button">&times;</button>
+                </div>
                 <button class="form__button" type="submit" form="nameform" value="Submit">Відправити</button>
             </form>
-          </label>
-        </div>
+        </label>
+    </div>
+    <div class="overlay">
+    </div>
     </main>
     <footer></footer>
     <script src="js/script.js"></script>
