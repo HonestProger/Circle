@@ -1,5 +1,27 @@
 let elem = document.querySelector('.button');
 
+function check() {
+  const popup = document.getElementsByClassName('popup');
+  if (document.getElementById('popup__input').checked = true) {
+    for (var i=0;i<popup.length;i+=1){
+      popup[i].style.display = 'block';
+    }
+  } else {
+    popup.style.display = "none";
+  }
+}
+
+function checkOverlay() {
+  const overlay = document.getElementsByClassName('overlay');
+  if (document.getElementById('popup__input').checked = true) {
+    for (var i=0;i<overlay.length;i+=1){
+      overlay[i].style.display = 'block';
+    }
+  } else {
+    overlay.style.display = "none";
+  }
+}
+
 const changePosition = () => {
   let randX = Math.random();
   let randY = Math.random();
@@ -17,9 +39,10 @@ const changePosition = () => {
   let randYP = randYMult + 'px';
 
 
-  elem.style.left = randYP;
   elem.style.top = randXP;
+  elem.style.left = randYP;
 };
+
 
 
 setInterval(changePosition, 1000);
