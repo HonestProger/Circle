@@ -50,15 +50,15 @@ form {
     
 }
 .close__button{
-    width: 0px;
+    width: 50px;
     position: absolute;
-    height: 0px;
+    height: 50px;
     cursor: pointer;
     border: none;
     outline: none;
     font-size: 3rem;
     font-weight: bold;
-    background-color: rgb(208, 201, 201);
+    background-color: rgba(104, 99, 99, 0);
     grid-column-start: 12;
     grid-column-end: 12;
 }
@@ -190,6 +190,10 @@ form {
     .popup {
         width: 330px;
     }
+    .close__button{
+        width: 25px;
+        height: 25px;
+    }
 }
 @media (max-width: 400.98px) {
     .form__button {
@@ -220,6 +224,10 @@ form {
     .popup {
         width: 280px;
         height: 150px;
+    }
+    .close__button{
+        width: 15px;
+        height: 15px;
     }
 }
 @media (max-width: 300.98px) {
